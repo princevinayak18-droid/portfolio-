@@ -3,36 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chetanay - BCA Cloud Engineer</title>
+<title>Chetanay | BCA Student | Aspiring Cloud Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body { margin:0; font-family:Arial; background:#0a1931; color:#fff; }
-.header { background: linear-gradient(135deg,#0a1931,#185adb); padding:40px 20px; text-align:center; }
-.header h1 { color:#4fc3f7; font-size:36px; margin:0; }
-.card { background:#13294b; border:1px solid #2c4a7a; border-radius:16px; padding:24px; margin:16px; }
-.green { color:#4ade80; }
-.card p { color:#cbd5e1; }
-.card a { color:#4fc3f7; }
-.btn { display:inline-block; margin-top:16px; background:#4fc3f7; color:#000; padding:12px 24px; border-radius:12px; text-decoration:none; font-weight:bold; }
+body{font-family:'Inter',sans-serif;background:#0f0f0f;color:#e5e5e5;margin:0;padding:0}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{border:1px solid #222;border-radius:16px;padding:30px;background:#171717;margin-top:20px}
+.badge{display:inline-block;background:#222;border-radius:20px;padding:5px 12px;font-size:12px;margin-bottom:10px}
+h1{margin:10px 0 5px;font-size:28px}
+.sub{color:#9ca3af;margin-bottom:20px}
+.about{margin:20px 0;line-height:1.6;color:#d1d5db}
+.contact a{color:#fff;background:#222;border:1px solid #333;padding:8px 14px;border-radius:8px;text-decoration:none;margin-right:8px;font-size:14px;display:inline-block;margin-top:8px}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}
+.card{border:1px solid #222;border-radius:16px;padding:20px;background:#171717}
+.card h3{margin-top:0}
+.status{font-size:12px;padding:4px 8px;border-radius:6px;background:#052e16;color:#4ade80;border:1px solid #166534}
+.btn{display:block;text-align:center;margin-top:15px;padding:10px;background:#fff;color:#000;border-radius:8px;text-decoration:none;font-weight:600}
+.note{font-size:12px;color:#9ca3af;margin-top:10px;background:#111;padding:10px;border-radius:8px;border:1px dashed #333}
+@media(max-width:700px){.projects{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="header">
-<h1>Chetanay - BCA<br>Cloud Engineer</h1>
-<p>Aspiring AWS Cloud Engineer | Delhi</p>
-</div>
-<div class="card">
-<h2>Project 1: AWS S3 Concept <span class="green">LIVE ✓</span></h2>
-<p>Hosted portfolio on Cloud mimicking S3 Static Website + CloudFront CDN concept using GitHub + Netlify CI/CD</p>
-<p>Link: chetanay-bca.netlify.app</p>
-<p><b>Tech:</b> AWS S3 (Concept), HTML, Netlify CDN</p>
-<a class="btn" href="https://chetanay-bca.netlify.app">View Project 1</a>
-</div>
-<div class="card">
-<h2>Project 2: AWS EC2 Concept <span class="green">LIVE ✓</span></h2>
-<p>Hosted on Linux Server like EC2 Ubuntu Instance. Launched GitHub Codespace Linux, uploaded files using Linux commands.</p>
-<p>Link: chetanay-bca.netlify.app</p>
-<p><b>Tech:</b> AWS EC2 (Concept), Linux, Ubuntu, GitHub Codespaces</p>
-<a class="btn" href="https://chetanay-bca.netlify.app">View Project 2</a>
+<div class="container">
+  <div class="header">
+    <div class="badge">● Available for Internships</div>
+    <h1>Chetanay - BCA Student | Aspiring Cloud Engineer</h1>
+    <div class="sub">Learning Cloud Fundamentals, Linux & CI/CD Deployments</div>
+    
+    <div class="about">
+      <b>About Me:</b> I am a BCA student passionate about Cloud Computing. Currently learning how static hosting, Linux servers, and CI/CD pipelines work by building real projects simulating AWS S3 and EC2 concepts.
+    </div>
+
+    <div class="contact">
+      <a href="mailto:Princevinayak22@gmail.com">📧 Email</a>
+      <a href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">💻 GitHub</a>
+      <a href="https://chetanay-bca.netlify.app" target="_blank">🌐 Portfolio</a>
+    </div>
+  </div>
+
+  <div class="projects">
+    <div class="card">
+      <span class="status">LIVE ✓</span>
+      <h3>Project 1: Static Hosting with Netlify CI/CD (S3 Concept)</h3>
+      <p style="font-size:14px;color:#9ca3af">Learned how AWS S3 static hosting works. Implemented same concept using Netlify: Connected GitHub repo to Netlify, enabled auto-deploy on push. This demonstrates CI/CD pipeline similar to S3 static website hosting.</p>
+      <div class="note"><b>What I did:</b> GitHub -> Netlify Integration -> Auto Deploy on Commit. Same workflow as S3.</div>
+      <a class="btn" href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">View GitHub Repo</a>
+    </div>
+
+    <div class="card">
+      <span class="status">DEMO RECORDED ✓</span>
+      <h3>Project 2: Linux Server Hosting Demo (EC2 Concept)</h3>
+      <p style="font-size:14px;color:#9ca3af">Learned how AWS EC2 (Linux instance) hosts websites. Simulated using GitHub Codespace Linux environment: Uploaded code to Linux server and started web server with <code>python3 -m http.server 8000</code> on port 8000.</p>
+      <div class="note"><b>Command Used:</b> python3 -m http.server 8000<br><b>Proof:</b> Server ran on Linux terminal (Screenshot recorded). Demo link is temporary because Codespace stops after 30 mins - same as stopping EC2 instance.</div>
+      <a class="btn" href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">View Setup & Screenshots on GitHub</a>
+    </div>
+  </div>
+
+  <p style="text-align:center;color:#555;margin-top:30px;font-size:12px">Built with ❤️ by Chetanay | BCA Cloud Journey 2026</p>
 </div>
 </body>
 </html>
