@@ -4,7 +4,7 @@
 **Email:** Princevinayak22@gmail.com
 
 ## Overview
-This portfolio demonstrates 2 core AWS Cloud Hosting Concepts using free tools (GitHub + Netlify + Linux).
+This portfolio demonstrates 3 core AWS Cloud Hosting Concepts using free tools (GitHub + Netlify + Linux).
 
 ### Project 1: AWS S3 Static Website + CloudFront Concept [LIVE ✓]
 - **Concept:** How AWS S3 hosts static websites and CloudFront gives global CDN.
