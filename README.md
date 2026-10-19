@@ -2,7 +2,15 @@
 **Live:** https://chetanay-bca.netlify.app
 **Student:** BCA First Year | Aspiring AWS Cloud Engineer | Delhi
 **Email:** Princevinayak22@gmail.com
+ 
+### 📸 LIVE PROOF - Deployed Project
+Real deployment on Netlify (Same as AWS S3 + CloudFront)
 
+![Live Proof](IMG_20261020_022256.png)
+
+Project: chetanay-bca | Status: Published ✅ | 7 Deployments
+
+---
 ## Overview
 This portfolio demonstrates 3 core AWS Cloud Hosting Concepts using free tools (GitHub + Netlify + Linux).
 
