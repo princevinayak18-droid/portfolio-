@@ -21,3 +21,14 @@ This portfolio demonstrates 2 core AWS Cloud Hosting Concepts using free tools (
   python3 -m http.server 8000
   # Server running on http://localhost:8000
   # Public URL: https://*.app.github.dev:8000
+
+
+### Project 3: Docker + Nginx Containerization [LIVE ✅]
+- **Concept:** How to containerize web apps with Docker (industry standard for Cloud/DevOps). Same as AWS ECS/Fargate concept.
+- **Implementation:** Created Dockerfile with nginx:alpine, built image, ran container on port 8000.
+- **Commands Executed:**
+```bash
+docker build -t chetanay-portfolio .
+docker run -d -p 8000:80 chetanay-portfolio
+# Live on: https://*.app.github.dev:8000 (Docker container)
+```
