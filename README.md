@@ -1,6 +1,6 @@
 # Chetanay - BCA Cloud Portfolio
 **Live:** https://chetanay-bca.netlify.app
-**Student:** BCA Final Year | Aspiring AWS Cloud Engineer | Delhi
+**Student:** BCA First Year | Aspiring AWS Cloud Engineer | Delhi
 **Email:** Princevinayak22@gmail.com
 
 ## Overview
