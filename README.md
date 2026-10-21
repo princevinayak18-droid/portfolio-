@@ -40,3 +40,9 @@ docker build -t chetanay-portfolio .
 docker run -d -p 8000:80 chetanay-portfolio
 # Live on: https://*.app.github.dev:8000 (Docker container)
 ```
+
+### Project 4: Linux Health Check - SRE / CloudWatch Concept [LIVE ✅]
+- **Concept:** How AWS CloudWatch monitors EC2 servers
+- **Implementation:** Bash script checking uptime, disk, memory, CPU - built on phone
+- **Commands:** chmod +x health-check.sh && ./health-check.sh
+- **Tech:** Linux, Bash, SRE
