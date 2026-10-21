@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chetanay | BCA Student | Aspiring Cloud Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Inter',sans-serif;background:#0f0f0f;color:#e5e5e5;margin:0;padding:0;}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{border:1px solid #222;border-radius:16px;padding:30px;background:#171717;margin-top:20px}
+.badge{display:inline-block;background:#222;border-radius:20px;padding:5px 12px;font-size:12px;margin-bottom:10px}
+h1{margin:10px 0 5px;font-size:28px}
+.sub{color:#9ca3af;margin-bottom:20px}
+.about{margin:20px 0;line-height:1.6;color:#d1d5db}
+.contact a{color:#fff;background:#222;border:1px solid #333;padding:8px 14px;border-radius:8px;text-decoration:none;margin-right:8px}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}
+.card{border:1px solid #222;border-radius:16px;padding:20px;background:#171717}
+.card h3{margin-top:0}
+.status{font-size:11px;padding:4px 8px;border-radius:6px;background:#052e16;color:#4ade80;border:1px solid #166534}
+.btn{display:block;text-align:center;margin-top:15px;padding:10px;background:#fff;color:#000;border-radius:8px;text-decoration:none;font-weight:600}
+.note{font-size:12px;color:#9ca3af;margin-top:10px;background:#111;padding:10px;border-radius:8px;border:1px dashed #333}
+@media(max-width:700px){.projects{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="badge">🟢 Available for Internships</div>
+<h1>Chetanay - BCA First Year Student | Aspiring Cloud Engineer</h1>
+<div class="sub">Learning Cloud Fundamentals, Linux & CI/CD Deployments</div>
+<div class="about">About Me: I am a BCA student passionate about Cloud Computing. Currently learning how static hosting, Linux servers, and CI/CD work. This portfolio demonstrates AWS S3 and EC2 concepts using Netlify and Linux.</div>
+<div class="contact">
+<a href="mailto:Princevinayak22@gmail.com">📧 Email</a>
+<a href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">💻 GitHub</a>
+<a href="https://chetanay-bca.netlify.app" target="_blank">🌐 Portfolio</a>
+</div>
+</div>
+
+<div class="projects">
+<div class="card">
+<span class="status">✓ LIVE</span>
+<h3>Project 1: Static Hosting with Netlify CI/CD (S3 Concept)</h3>
+<p style="font-size:14px;color:#9ca3af">Learned how AWS S3 static hosting works. Implemented same concept using Netlify with GitHub Integration -> Auto Deploy on Commit.</p>
+<div class="note">What I did: GitHub -> Netlify Integration -> Auto Deploy. Same workflow as S3 + CloudFront.</div>
+<a class="btn" href="https://chetanay-bca.netlify.app" target="_blank">View Live Project ✓</a>
+</div>
+
+<div class="card">
+<span class="status">✓ DEMO RECORDED</span>
+<h3>Project 2: Linux Server Hosting Demo (EC2 Concept)</h3>
+<p style="font-size:14px;color:#9ca3af">Learned how AWS EC2 (Linux instance) hosts websites. Simulated using GitHub Codespace (Ubuntu VM) with Python HTTP server.</p>
+<div class="note"><b>Command Used:</b> python3 -m http.server 8000<br><b>Proof:</b> Server ran on Linux terminal. Public URL is temporary (expires when EC2/Codespace stops) - so demo is recorded in GitHub README.</div>
+<a class="btn" href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">View Code & Screenshots</a>
+</div>
+</div>
+<div class="card">
+  <span style="background:#0a0; color:white; padding:2px 8px; border-radius:4px; font-size:12px;">✓ LIVE</span>
+  <h3>Project 3: Docker + Nginx Containerization (ECS/Fargate Concept)</h3>
+  <p>Learned how Docker containerizes web apps for production. Implemented with Dockerfile + Nginx Alpine - same concept as AWS ECS/Fargate.</p>
+  <p style="background:#222; padding:10px; border-radius:6px; font-size:12px;">
+    <b>What I did:</b> Dockerfile -> docker build -> docker run -p 8000:80.<br>
+    <b>Tech:</b> Docker, Nginx, Linux Containers.
+  </p>
+  <a class="btn" href="https://github.com/princevinayak18-droid/portfolio-" target="_blank">View Docker Proof in GitHub README ✓</a>
+</div>
+<p style="text-align:center;color:#555;margin-top:30px;font-size:12px">Built with ❤️ by Chetanay | BCA Cloud Journey 2026</p>
+</div>
+</body>
+</html>
