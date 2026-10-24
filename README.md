@@ -62,3 +62,5 @@ docker run -d -p 8000:80 chetanay-portfolio
 - **Workflow File:** `.github/workflows/health-check.yml`
 - **Tech:** HTML, GitHub Actions, YAML, CI/CD, Netlify, Cron Jobs
 - **Commands Executed:**
+
+- [x] Project 06 - S3 + FinOps (Built with 0 credits - Production Block Challenge!)
