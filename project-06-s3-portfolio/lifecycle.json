@@ -1,0 +1,14 @@
+{
+  "Rules": [
+    {
+      "ID": "Delete old deploys after 90 days - Learned from Netlify",
+      "Status": "Enabled",
+      "Filter": {
+        "Prefix": "deploys/"
+      },
+      "Expiration": {
+        "Days": 90
+      }
+    }
+  ]
+}
