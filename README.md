@@ -1,10 +1,10 @@
 # Chetanay - BCA Cloud Portfolio
-**Live:** https://chetanay-bca.netlify.app
+Live: https://portfolio-seven-gilt-73.vercel.app
 **Student:** BCA First Year | Aspiring AWS Cloud Engineer | Delhi
 **Email:** Princevinayak22@gmail.com
  
 ### 📸 LIVE PROOF - Deployed Project
-Real deployment on Netlify (Same as AWS S3 + CloudFront)
+Real deployment on Vercel (Same as AWS S3 + CloudFront)
 
 ![Live Proof](IMG_20261020_022256.png)
 
@@ -18,7 +18,7 @@ This portfolio demonstrates 5 core AWS Cloud Hosting Concepts using free tools (
 - **Concept:** How AWS S3 hosts static websites and CloudFront gives global CDN.
 - **Implementation:** Hosted static portfolio on Netlify.
 - **CI/CD Concept:** Same as AWS CodePipeline. Push to GitHub main branch -> Auto Deploy to Netlify -> Live.
-- **Live Link:** https://chetanay-bca.netlify.app
+  Live: https://portfolio-seven-gilt-73.vercel.app
 - **Tech:** HTML, CSS, GitHub, Netlify CI/CD
 
 ### Project 2: AWS EC2 Linux Server Concept [DEMO RECORDED]
