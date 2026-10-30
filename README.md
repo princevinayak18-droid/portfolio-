@@ -63,4 +63,22 @@ docker run -d -p 8000:80 chetanay-portfolio
 - **Tech:** HTML, GitHub Actions, YAML, CI/CD, Netlify, Cron Jobs
 - **Commands Executed:**
 
-- [x] Project 06 - S3 + FinOps (Built with 0 credits - Production Block Challenge!)
+
+### Project 6: Serverless Contact API - Lambda (Lambda + API Gateway Concept) ✓ LIVE
+
+**Learned how AWS Lambda runs code without servers.**
+
+**What I did:** `api/contact.js` -> Vercel auto-detects as serverless function -> `POST /api/contact` -> JSON response. Same as AWS Lambda + API Gateway + pay-per-request.
+
+**Tech:** Serverless, Node.js, API Gateway Concept.
+
+**Live Proof:** Test form at https://portfolio-seven-gilt-73.vercel.app#contact
+
+**Code:**
+```js
+// api/contact.js
+export default function handler(req, res) {
+  if(req.method === 'POST') {
+    return res.json({ success: true, message: "Message received!" })
+  }
+}
