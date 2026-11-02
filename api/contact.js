@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     }
     
     // SAVE TO DB - Like DynamoDB PutItem
-    await redis.lpush("contacts", JSON.stringify(newContact))
+    await redis.lpush("contacts", JSON.stringify(contact))
     
     return res.status(200).json({ 
       success: true, 
