@@ -1,84 +1,73 @@
-# Chetanay - BCA Cloud Portfolio
-Live: https://portfolio-seven-gilt-73.vercel.app
-**Student:** BCA First Year | Aspiring AWS Cloud Engineer | Delhi
-**Email:** Princevinayak22@gmail.com
- 
-### 📸 LIVE PROOF - Deployed Project
-Real deployment on Vercel (Same as AWS S3 + CloudFront)
+# Chetanay - BCA Student | Cloud & Backend Developer
 
-![Live Proof](IMG_20261020_022256.png)
+BCA Student building real projects in Cloud, DevOps & Backend.
+All 7 projects are LIVE on Vercel - not just theory, deployed and tested.
 
-Project: chetanay-bca | Status: Published ✅ | 7 Deployments
+**Live Portfolio:** https://portfolio-seven-gilt-73.vercel.app
+**GitHub:** https://github.com/princevinayak18-droid/portfolio-
+**Location:** Dadri, UP, India
 
 ---
-## Overview
-This portfolio demonstrates 5 core AWS Cloud Hosting Concepts using free tools (GitHub + Netlify + Linux).
 
-### Project 1: AWS S3 Static Website + CloudFront Concept [LIVE ✓]
-- **Concept:** How AWS S3 hosts static websites and CloudFront gives global CDN.
-- **Implementation:** Hosted static portfolio on Netlify.
-- **CI/CD Concept:** Same as AWS CodePipeline. Push to GitHub main branch -> Auto Deploy to Netlify -> Live.
-  Live: https://portfolio-seven-gilt-73.vercel.app
-- **Tech:** HTML, CSS, GitHub, Netlify CI/CD
+## 🚀 All Projects - LIVE
 
-### Project 2: AWS EC2 Linux Server Concept [DEMO RECORDED]
-- **Concept:** How AWS EC2 launches a Linux Ubuntu instance and runs a web server on port 8000.
-- **Implementation:** Used GitHub Codespace (Ubuntu Linux VM - same as EC2 Instance).
-- **Commands Executed:**
-  ```bash
-  python3 -m http.server 8000
-  # Server running on http://localhost:8000
-  # Public URL: https://*.app.github.dev:8000
+### Project 1: Static Hosting with Vercel CI/CD (S3 Concept) - ✅ LIVE
+Learned how AWS S3 static hosting works. Implemented same concept using Vercel.
+- **What I did:** GitHub -> Vercel Integration -> Auto Deploy. Same workflow as S3 + CloudFront.
+- **Tech:** HTML, CSS, Vercel CI/CD
+- **Live:** https://portfolio-seven-gilt-73.vercel.app
 
+### Project 2: Linux Server Hosting Demo (EC2 Concept) - ✅ DEMO RECORDED
+Learned how AWS EC2 (Linux instance) hosts websites.
+- **What I did:** `python3 -m http.server 8000` - Server ran on Linux terminal.
+- **Tech:** Linux, Python, EC2 Concept
 
-### Project 3: Docker + Nginx Containerization [LIVE ✅]
-- **Concept:** How to containerize web apps with Docker (industry standard for Cloud/DevOps). Same as AWS ECS/Fargate concept.
-- **Implementation:** Created Dockerfile with nginx:alpine, built image, ran container on port 8000.
-- **Commands Executed:**
-```bash
-docker build -t chetanay-portfolio .
-docker run -d -p 8000:80 chetanay-portfolio
-# Live on: https://*.app.github.dev:8000 (Docker container)
-```
+### Project 3: Docker + Nginx Containerization (ECS/Fargate Concept) - ✅ LIVE
+Learned how Docker containerizes web apps for production.
+- **What I did:** `Dockerfile -> docker build -> docker run -p 8000:80`
+- **Tech:** Docker, Nginx, Linux Containers
 
-### Project 4: Linux Health Check - SRE / CloudWatch Concept [LIVE ✅]
-- **Concept:** How AWS CloudWatch monitors EC2 servers
-- **Implementation:** Bash script checking uptime, disk, memory, CPU - built on phone
-- **Commands:** chmod +x health-check.sh && ./health-check.sh
-- **Tech:** Linux, Bash, SRE
-  
-### Project 5: DevOps Blog + CI/CD Pipeline [LIVE ✅]
+### Project 4: Linux Health Check - SRE (CloudWatch Concept) - ✅ LIVE
+Built Bash script that monitors EC2 like CloudWatch.
+- **What I did:** `health-check.sh` - chmod +x, checks uptime, disk, memory
+- **Tech:** Bash, Linux, SRE Monitoring
 
-- **Concept:** How AWS CodePipeline + CloudFront auto-deploy + How DevOps teams document journey via blogs. Same as personal branding for Cloud Engineers.
-- **Implementation:** Created multi-page portfolio - Main page + Blog.html. Added GitHub Actions CI/CD workflow (.github/workflows/health-check.yml) that runs daily health check cron job at 9 AM. Every push to main auto-deploys to Netlify - same as S3 + CloudFront.
-- **Key Features:**
-    - Multi-page static hosting (index.html + Blog.html)
-    - CI/CD - Push to main → Auto deploy
-    - GitHub Actions - Daily cron `0 9 * * *`
-    - Cost saving - Used `[skip netlify]` flag to save credits
-    - 100% Built on phone from Delhi 📱
-- **Live Link:** https://chetanay-bca.netlify.app
-- **Blog Link:** https://chetanay-bca.netlify.app/Blog.html
-- **Workflow File:** `.github/workflows/health-check.yml`
-- **Tech:** HTML, GitHub Actions, YAML, CI/CD, Netlify, Cron Jobs
-- **Commands Executed:**
+### Project 5: DevOps Blog + CI/CD Pipeline (GitHub Actions Concept) - ✅ LIVE
+Learned how CI/CD automates checks. Built blog + daily health-check workflow.
+- **What I did:** `blog.html` + `.github/workflows/`
+- **Tech:** HTML, GitHub Actions, CI/CD
+- **Live:** https://portfolio-seven-gilt-73.vercel.app/blog.html
 
+### Project 6: Serverless Contact API - Lambda (Lambda Concept) - ✅ LIVE
+Learned how AWS Lambda runs code without servers.
+- **What I did:** `api/contact.js` - Serverless Function on Vercel
+- **Tech:** Node.js, Vercel Serverless, Lambda Concept
+- **Live:** Test Live Lambda Contact Form on portfolio
 
-### Project 6: Serverless Contact API - Lambda (Lambda + API Gateway Concept) ✓ LIVE
+### Project 7: Task Manager API - Backend - ✅ LIVE
+Full Backend API with Auth + CRUD - Built as Backend Developer on Vercel.
+- **APIs:**
+    - `POST /api/register` - Create new user
+    - `POST /api/login` - Login user, returns token
+    - `GET /api/tasks` - Get all tasks
+    - `POST /api/tasks` - Create new task
+- **Role:** Backend Developer - Designed APIs, tested live
+- **Tech:** Node.js, Vercel Serverless, REST API
+- **Live:** https://portfolio-seven-gilt-73.vercel.app
 
-**Learned how AWS Lambda runs code without servers.**
+---
 
-**What I did:** `api/contact.js` -> Vercel auto-detects as serverless function -> `POST /api/contact` -> JSON response. Same as AWS Lambda + API Gateway + pay-per-request.
+## 🛠️ Skills
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, REST APIs, Serverless Functions
+- **Cloud / DevOps:** AWS Concepts (S3, EC2, Lambda, ECS), Docker, Nginx, Linux, Git, GitHub Actions, Vercel
+- **Tools:** GitHub Mobile, VS Code
 
-**Tech:** Serverless, Node.js, API Gateway Concept.
+## 🎯 Currently Learning
+Backend + Cloud on Vercel - Building Project 8 next
 
-**Live Proof:** Test form at https://portfolio-seven-gilt-73.vercel.app#contact
+## 📬 Contact
+- Portfolio Contact Form (Project 6 Lambda API on Vercel)
+- GitHub: princevinayak18-droid
 
-**Code:**
-```js
-// api/contact.js
-export default function handler(req, res) {
-  if(req.method === 'POST') {
-    return res.json({ success: true, message: "Message received!" })
-  }
-}
+Built with ❤️ by Chetanay | BCA Cloud Journey 2026 | Deployed on Vercel
