@@ -1,7 +1,7 @@
 # Chetanay - BCA Student | Cloud & Backend Developer
 
 BCA Student building real projects in Cloud, DevOps & Backend.
-All 7 projects are LIVE on Vercel - not just theory, deployed and tested.
+All 8 projects are LIVE on Vercel - not just theory, deployed and tested.
 
 **Live Portfolio:** https://portfolio-seven-gilt-73.vercel.app
 **GitHub:** https://github.com/princevinayak18-droid/portfolio-
@@ -55,7 +55,7 @@ Full Backend API with Auth + CRUD - Built as Backend Developer on Vercel.
 - **Tech:** Node.js, Vercel Serverless, REST API
 - **Live:** https://portfolio-seven-gilt-73.vercel.app
 
-###  Project 8: Expense Tracker
+###  Project 8: Expense Tracker - ✅
 - Full CRUD API + Dashboard with Total Calculation
 - GET /api/expenses - Get all + Total
 - POST /api/expenses - Add Expense
