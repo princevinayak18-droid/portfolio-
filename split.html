@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SplitWise Clone - Split Bills With Friends</title>
+<style>
+*{box-sizing:border-box}body{font-family:Arial;background:#f0f2f5;margin:0;padding:15px}.box{max-width:600px;margin:auto;background:white;padding:20px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.1)}h1{text-align:center}input,select,button{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:1px solid #ddd;font-size:15px}button{background:#1cc29f;color:white;border:none;font-weight:bold;cursor:pointer}.group{border:1px solid #eee;padding:15px;border-radius:10px;margin-top:15px}.green{color:green;font-weight:bold}.red{color:red;font-weight:bold}.exp{background:#f9f9f9;padding:8px;border-radius:8px;margin:5px 0;font-size:14px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>💸 Split Bills</h1>
+<p style="text-align:center;color:#666">Split expenses with friends easily</p>
+
+<h3>Create New Group</h3>
+<input id="groupName" placeholder="Group Name - e.g. Amity Friends">
+<input id="members" placeholder="Members comma separated - e.g. Prince, Rahul, Priya">
+<button onclick="createGroup()">Create Group</button>
+
+<div id="groups"></div>
+</div>
+
+<script>
+const API = '/api/split';
+
+async function load(){
+  const res = await fetch(API);
+  const data = await res.json();
+  let html = '';
+  data.forEach(g => {
+    html += `<div class="group">
+    <h3>${g.name}</h3>
+    <p><b>Balances:</b><br>${g.members.map(m => `${m.name}: <span class="${m.balance>=0?'green':'red'}">₹${Math.round(m.balance)}</span> ${m.balance>0?'(will get)':m.balance<0?'(owes)':'(settled)'}`).join('<br>')}</p>
+    <input id="desc-${g.id}" placeholder="What was it? e.g. Dinner">
+    <input id="amt-${g.id}" type="number" placeholder="Amount ₹">
+    <select id="paid-${g.id}">${g.members.map(m=>`<option>${m.name}</option>`).join('')}</select>
+    <button onclick="addExpense('${g.id}')">Add Expense</button>
+    <button onclick="settle('${g.id}')" style="background:#ff6b6b">Settle Up All</button>
+    <div>${g.expenses.map(e=>`<div class="exp">${e.description} - ₹${e.amount} paid by ${e.paidBy} - ${e.date}</div>`).join('')}</div>
+    </div>`;
+  });
+  document.getElementById('groups').innerHTML = html || '<p style="text-align:center;color:#888">No groups yet. Create one above!</p>';
+}
+
+async function createGroup(){
+  const name = document.getElementById('groupName').value;
+  const members = document.getElementById('members').value.split(',').map(s=>s.trim()).filter(Boolean);
+  if(!name || members.length<2) return alert('Enter group name + at least 2 members');
+  await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'createGroup',name,members})});
+  document.getElementById('groupName').value=''; document.getElementById('members').value='';
+  load();
+}
+
+async function addExpense(id){
+  const description = document.getElementById(`desc-${id}`).value;
+  const amount = Number(document.getElementById(`amt-${id}`).value);
+  const paidBy = document.getElementById(`paid-${id}`).value;
+  if(!description || !amount) return alert('Enter description + amount');
+  await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'addExpense',groupId:id,description,amount,paidBy})});
+  load();
+}
+
+async function settle(id){
+  if(!confirm('Settle all balances?')) return;
+  await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'settle',groupId:id})});
+  load();
+}
+load();
+</script>
+</body>
+</html>
